@@ -2,7 +2,7 @@
 
 const Route = use('Route')
 
-Route.post('/', () => {
+Route.get('/', () => {
   return { gretting: 'Welcome to API Adopets!' }
 })
 Route.post('users', 'UserController.store')
