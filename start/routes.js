@@ -2,6 +2,9 @@
 
 const Route = use('Route')
 
+Route.post('/', () => {
+  return { gretting: 'Welcome to API Adopets!' }
+})
 Route.post('users', 'UserController.store')
 Route.post('sessions', 'SessionController.store')
 
